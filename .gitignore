@@ -3,6 +3,7 @@
 *.pem
 *.key
 .env.txt
+env.txt
 
 # Python
 __pycache__/

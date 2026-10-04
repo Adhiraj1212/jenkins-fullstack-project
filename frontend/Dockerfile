@@ -10,7 +10,7 @@ EXPOSE 80
 
 # wget ships with alpine, so no extra package needed here.
 HEALTHCHECK --interval=10s --timeout=3s --start-period=5s --retries=3 \
-    CMD wget -q -O /dev/null http://localhost/healthz || exit 1
+    CMD wget -q -O /dev/null http://127.0.0.1/healthz || exit 1
 
 # Inherited from the base image, shown for clarity: nginx must stay in the
 # foreground. A daemonised process would exit and take the container with it.
