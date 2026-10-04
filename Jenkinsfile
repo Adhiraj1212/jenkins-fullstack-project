@@ -6,10 +6,10 @@ pipeline {
 
     environment {
         REGISTRY        = 'ghcr.io'
-        OWNER           = 'devopstrainer-01'                // TODO: your GitHub username/org (lowercase)
+        OWNER           = 'adhiraj1212'                // TODO: your GitHub username/org (lowercase)
         BACKEND_IMAGE   = "${REGISTRY}/${OWNER}/devops-fullstack-project1-backend"
         FRONTEND_IMAGE  = "${REGISTRY}/${OWNER}/devops-fullstack-project1-frontend"
-        APP_EC2_HOST    = 'ubuntu@10.0.0.42'  // TODO: real private IP
+        APP_EC2_HOST    = 'ubuntu@10.0.0.85'  // TODO: real private IP
         APP_DIR         = '~/3tier-webapp-deployment'
         IMAGE_TAG       = "${env.GIT_COMMIT.take(7)}"
     }
